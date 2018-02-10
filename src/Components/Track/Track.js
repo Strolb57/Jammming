@@ -17,12 +17,12 @@ export class Track extends React.Component{
 
 addTrack(){
   let track = this.props.track;
-  track = this.props.onAdd
+  return track;
 
 }
 removeTrack(){
   let track = this.props.track;
-  track = this.props.onRemove
+  return track;
 }
 
 renderAction(){
@@ -41,8 +41,8 @@ renderAction(){
 
   render(){
     return(
-      <div className="Track">
-        <div className="Track-information">
+      <div  className="Track">
+        <div  className="Track-information">
           <h3>{this.props.name}</h3>
           <p>{this.props.artist} | {this.props.album}</p>
         </div>

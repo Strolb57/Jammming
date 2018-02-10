@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import './App.css';
 import {SearchBar} from '../SearchBar/SearchBar.js'
@@ -29,8 +29,8 @@ this.savePlaylist = this.savePlaylist.bind(this);
 this.search = this.search.bind(this);
 };
 
-search(searchTerm){
-  Spotify.search(searchTerm)
+search(term){
+  Spotify.search(term)
 }
 
 savePlaylist(track){
