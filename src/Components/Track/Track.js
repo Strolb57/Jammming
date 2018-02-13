@@ -7,9 +7,7 @@ import './Track.css';
 export class Track extends React.Component{
   constructor(props){
     super(props);
-    //this.state = {
-      //isRemoval: 'true'
-    //}
+    
     this.removeTrack = this.removeTrack.bind(this);
     this.addTrack = this.addTrack.bind(this);
     this.renderAction = this.renderAction.bind(this);

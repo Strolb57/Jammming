@@ -30,10 +30,15 @@ this.search = this.search.bind(this);
 Spotify.getAccessToken()
 };
 
-search(term){
-  Spotify.search(term)
+
+  search(term) {
+  console.log(Spotify.search(term));
+  Spotify.search(term).then(searchResults => {
+    this.setState({searchResults: searchResults});
+  });
 
 }
+
 
 savePlaylist(track){
   Spotify.savePlaylist(this.setState({playlistTracks: track}))
