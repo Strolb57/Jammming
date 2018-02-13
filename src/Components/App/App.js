@@ -27,10 +27,12 @@ this.removeTrack = this.removeTrack.bind(this);
 this.updatePlaylistName = this.updatePlaylistName.bind(this);
 this.savePlaylist = this.savePlaylist.bind(this);
 this.search = this.search.bind(this);
+Spotify.getAccessToken()
 };
 
 search(term){
   Spotify.search(term)
+
 }
 
 savePlaylist(track){
